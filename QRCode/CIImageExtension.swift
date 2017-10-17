@@ -46,7 +46,7 @@ internal extension CIImage {
             let source = NSImage(cgImage: cgImage, size: self.extent.size)
             let result = NSImage(size: size)
             result.lockFocus()
-            guard let context = NSGraphicsContext.current() else { return nil }
+            guard let context = NSGraphicsContext.current else { return nil }
             context.imageInterpolation = .none
             source.draw(in: CGRect(origin: CGPoint(x: 0, y: 0), size: size), from: extent, operation: .copy, fraction: 1.0)
             result.unlockFocus()
