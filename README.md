@@ -1,9 +1,5 @@
 # QRCode 🔳
 
-[![Build Status](https://travis-ci.org/aschuch/QRCode.svg)](https://travis-ci.org/aschuch/QRCode)
-![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)
-![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg)
-
 A QRCode generator written in Swift.
 
 ![QRCode Example](Resources/example.png)
@@ -72,15 +68,7 @@ let qrCode = 🔳("http://example.com")
 
 ## Version Compatibility
 
-Current Swift compatibility breakdown:
-
-| Swift Version | Framework Version |
-| ------------- | ----------------- |
-| 3.0           | 2.x               |
-| 2.3           | 1.x               |
-| 2.2           | 0.x               |
-
-[all releases]: https://github.com/aschuch/QRCode/releases
+This fork is compatible with Swift 4. For other Swift versions use [aschuch/QRCode](https://github.com/aschuch/QRCode) instead.
 
 ## Installation
 
@@ -89,7 +77,7 @@ Current Swift compatibility breakdown:
 Add the following line to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile).
 
 ```
-github "aschuch/QRCode"
+github "blochberger/QRCode"
 ```
 
 Then run `carthage update`.
