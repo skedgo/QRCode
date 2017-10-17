@@ -109,7 +109,7 @@
 		4D248F311A751C7800E44E6B /* QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D248F341A751C7800E44E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D248F351A751C7800E44E6B /* QRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCode.h; sourceTree = "<group>"; };
-		4D248F3B1A751C7800E44E6B /* QRCodeTests_iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = QRCodeTests_iOS.xctest; path = QRCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D248F3B1A751C7800E44E6B /* QRCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D248F431A751C7800E44E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D248F441A751C7800E44E6B /* QRCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTests.swift; sourceTree = "<group>"; };
 		4D248F511A751CE300E44E6B /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 			children = (
 				4D248F071A751C3700E44E6B /* Example.app */,
 				4D248F311A751C7800E44E6B /* QRCode.framework */,
-				4D248F3B1A751C7800E44E6B /* QRCodeTests_iOS.xctest */,
+				4D248F3B1A751C7800E44E6B /* QRCodeTests.xctest */,
 				60940CE11F3B75AB00725D98 /* QRCode.framework */,
 				60940CE91F3B75AB00725D98 /* QRCodeTests.xctest */,
 				60940D021F3B814300725D98 /* Example.app */,
@@ -245,8 +245,8 @@
 		4D248F411A751C7800E44E6B /* QRCodeTests */ = {
 			isa = PBXGroup;
 			children = (
-				4D248F441A751C7800E44E6B /* QRCodeTests.swift */,
 				4D248F421A751C7800E44E6B /* Supporting Files */,
+				4D248F441A751C7800E44E6B /* QRCodeTests.swift */,
 			);
 			path = QRCodeTests;
 			sourceTree = "<group>";
@@ -346,7 +346,7 @@
 			);
 			name = QRCodeTests_iOS;
 			productName = QRCodeTests;
-			productReference = 4D248F3B1A751C7800E44E6B /* QRCodeTests_iOS.xctest */;
+			productReference = 4D248F3B1A751C7800E44E6B /* QRCodeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		60940CE01F3B75AB00725D98 /* QRCode_macOS */ = {
