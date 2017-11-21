@@ -34,6 +34,9 @@ public struct QRCode {
         case High = "H"
     }
 
+    /// The maximum size of bytes a QR code can display
+    public static let MaximumSizeInBytes = 2953
+
     /// Data contained in the generated QRCode
     public let data: Data
 

@@ -101,10 +101,8 @@ class QRCodeTests: XCTestCase {
     }
 
     func testCapacity() {
-        let limitBytes = 2953
-
-        let maximumBytes = randomBytes(count: limitBytes)!
-        let tooManyBytes = randomBytes(count: limitBytes + 1)!
+        let maximumBytes = randomBytes(count: QRCode.MaximumSizeInBytes)!
+        let tooManyBytes = randomBytes(count: QRCode.MaximumSizeInBytes + 1)!
 
         let codeWithMaximumBytes = QRCode(maximumBytes)
         let codeWithTooManyBytes = QRCode(tooManyBytes)
