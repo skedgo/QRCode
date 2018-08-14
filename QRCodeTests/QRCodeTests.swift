@@ -118,16 +118,12 @@ class QRCodeTests: XCTestCase {
 // MARK: - Helpers
 
 func randomBytes(count: Int) -> Data? {
-    var bytes = Data(count: count)
-    let status = bytes.withUnsafeMutableBytes {
-        bytesPtr in
-
-        SecRandomCopyBytes(kSecRandomDefault, bytes.count, bytesPtr)
-    }
+	var bytes = [UInt8](repeating: 0, count: count)
+    let status = SecRandomCopyBytes(kSecRandomDefault, count, &bytes)
 
     guard status == errSecSuccess else {
         return nil
     }
 
-    return bytes
+    return Data(bytes)
 }
