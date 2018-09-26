@@ -43,13 +43,6 @@
 			remoteGlobalIDString = 4D248F301A751C7800E44E6B;
 			remoteInfo = QRCode;
 		};
-		4D248F461A751C7800E44E6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D248EFF1A751C3700E44E6B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 60940CE01F3B75AB00725D98;
-			remoteInfo = QRCode_macOS;
-		};
 		60940D131F3B836600725D98 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4D248EFF1A751C3700E44E6B /* Project object */;
@@ -305,7 +298,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				4D248F471A751C7800E44E6B /* PBXTargetDependency */,
 				60CA867B1F3BC32900E844B2 /* PBXTargetDependency */,
 			);
 			name = Example_iOS;
@@ -581,11 +573,6 @@
 			isa = PBXTargetDependency;
 			target = 4D248F301A751C7800E44E6B /* QRCode_iOS */;
 			targetProxy = 4D248F3D1A751C7800E44E6B /* PBXContainerItemProxy */;
-		};
-		4D248F471A751C7800E44E6B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 60940CE01F3B75AB00725D98 /* QRCode_macOS */;
-			targetProxy = 4D248F461A751C7800E44E6B /* PBXContainerItemProxy */;
 		};
 		60940CEC1F3B75AB00725D98 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
