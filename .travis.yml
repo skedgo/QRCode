@@ -1,17 +1,15 @@
 language: swift
 os: osx
+osx_image: xcode10
+xcode_project: QRCode.xcodeproj
 
 matrix:
   include:
     - name: "macOS"
-      script:
-        - xcodebuild test -sdk macosx -project QRCode.xcodeproj -scheme QRCode_macOS
+      xcode_scheme: QRCode_macOS
     - name: "iOS"
-      script:
-       - xcodebuild -sdk iphonesimulator -project QRCode.xcodeproj -scheme QRCode_iOS CODE_SIGNING_REQUIRED=NO
+      xcode_scheme: QRCode_iOS
     - name: "macOS Example App"
-      script:
-        - xcodebuild -sdk macosx -project QRCode.xcodeproj -scheme Example_macOS
+      xcode_scheme: Example_macOS
     - name: "iOS Example App"
-      script:
-        - xcodebuild -sdk iphonesimulator -project QRCode.xcodeproj -scheme Example_iOS CODE_SIGNING_REQUIRED=NO
+      xcode_scheme: Example_iOS
