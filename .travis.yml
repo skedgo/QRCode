@@ -10,10 +10,10 @@ matrix:
     - name: "iOS"
       #xcode_scheme: QRCode_iOS
       script:
-        - set -o pipefail && xcodebuild -project QRCode.xcodeproj -scheme QRCode_iOS CODE_SIGNING_REQUIRED=NO build test | xcpretty
+        - set -o pipefail && xcodebuild -sdk iphonesimulator -project QRCode.xcodeproj -scheme QRCode_iOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
     - name: "macOS Example App"
       xcode_scheme: Example_macOS
     - name: "iOS Example App"
       #xcode_scheme: Example_iOS
       script:
-        - set -o pipefail && xcodebuild -project QRCode.xcodeproj -scheme Example_iOS CODE_SIGNING_REQUIRED=NO build test | xcpretty
+        - set -o pipefail && xcodebuild -sdk iphonesimulator -project QRCode.xcodeproj -scheme Example_iOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
