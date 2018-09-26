@@ -10,7 +10,7 @@ matrix:
     - name: "iOS"
       #xcode_scheme: QRCode_iOS
       script:
-        - set -o pipefail && xcodebuild -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=12.0,name=iPhone SE' -project QRCode.xcodeproj -scheme QRCode_iOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
+        - set -o pipefail && xcodebuild -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=12.0,name=iPhone SE' -project QRCode.xcodeproj -scheme QRCode_iOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO test | xcpretty
     - name: "macOS Example App"
       xcode_scheme: Example_macOS
     - name: "iOS Example App"
